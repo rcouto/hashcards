@@ -21,7 +21,7 @@
         packages.default = craneLib.buildPackage {
           src = pkgs.lib.cleanSourceWith {
             src = ./.;
-            filter = allSrcFilter;
+            # filter = allSrcFilter;
             # Be reproducible, regardless of the directory name :
             name = "source";
           };
